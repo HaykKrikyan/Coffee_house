@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fresh Roasted Coffee</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">☕ Coffee House</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Our story</a></li>
+            <li><a class="dropdown-item" href="#">Team</a></li>
+            <li><a class="dropdown-item" href="#">Reviews</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <div class="position-relative w-100">
+          <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"></i>
+          <input class="form-control ps-5" type="search"
+                 placeholder="Search coffee…" aria-label="Search">
+        </div>
+      </form>
+    </div>
+
+  </div>
+</nav>
+
+<div class="all">
+<!-- ===== CAROUSEL ===== -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="https://media.istockphoto.com/id/133828852/photo/strange-golden-smoke-taking-away-from-coffee-seeds.webp?a=1&b=1&s=612x612&w=0&k=20&c=bfPW2U6QaPCnErRE0cSJ6kFu6zN2el-eBmleau1PbYQ=" alt="Fresh roasted coffee">
+      <div class="carousel-caption">
+        <h1 class="display-4 fw-bold">Fresh roasted coffee</h1>
+        <p class="lead d-none d-md-block">Roasted daily, delivered to your door</p>
+        <a href="#" class="btn btn-warning btn-lg px-4">Shop now</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Brewed with care">
+      <div class="carousel-caption">
+        <h1 class="display-4 fw-bold">Brewed with care</h1>
+        <p class="lead d-none d-md-block">Every cup made by real baristas</p>
+        <a href="#" class="btn btn-warning btn-lg px-4">See products</a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+
+<!-- ===== CARDS: 2 rows x 3 columns ===== -->
+<div class="container container1 py-5" id="shop">
+    <div class="intro"><h2>Our roasts</h2>
+    <p>Six coffees, from bright and fruity to dark and bold. All 250 g.</p>
+    </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <section class="card h-100">
+        <svg viewBox="0 0 240 120" class="card-img-top d-block bg-body-tertiary" role="img" aria-label="Light roast in a cup">
+          <g transform="translate(60 0)">
+            <circle cx="60" cy="60" r="54" fill="#F3EFE8" stroke="rgba(0,0,0,.08)"></circle>
+            <rect x="96" y="52" width="16" height="16" rx="8" fill="#E9E3D8"></rect>
+            <circle cx="60" cy="60" r="42" fill="#FBF8F2" stroke="rgba(0,0,0,.1)"></circle>
+            <circle cx="60" cy="60" r="35" fill="#D2AE74"></circle>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,235,200,.35)" stroke-width="3"></circle>
+            <ellipse cx="48" cy="48" rx="11" ry="5" fill="rgba(255,255,255,.22)" transform="rotate(-35 48 48)"></ellipse>
+          </g>
+        </svg>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Light roast</h4>
+          <p class="card-text">Bright and fruity, with a gentle acidity.</p>
+          <a href="#" class="btn btn-warning mt-auto">Add to cart</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <section class="card h-100">
+        <svg viewBox="0 0 240 120" class="card-img-top d-block bg-body-tertiary" role="img" aria-label="Light-medium roast in a cup">
+          <g transform="translate(60 0)">
+            <circle cx="60" cy="60" r="54" fill="#F3EFE8" stroke="rgba(0,0,0,.08)"></circle>
+            <rect x="96" y="52" width="16" height="16" rx="8" fill="#E9E3D8"></rect>
+            <circle cx="60" cy="60" r="42" fill="#FBF8F2" stroke="rgba(0,0,0,.1)"></circle>
+            <circle cx="60" cy="60" r="35" fill="#B07F45"></circle>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,235,200,.35)" stroke-width="3"></circle>
+            <ellipse cx="48" cy="48" rx="11" ry="5" fill="rgba(255,255,255,.22)" transform="rotate(-35 48 48)"></ellipse>
+          </g>
+        </svg>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Light-medium roast</h4>
+          <p class="card-text">Sweet and balanced, with notes of caramel.</p>
+          <a href="#" class="btn btn-warning mt-auto">Add to cart</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <section class="card h-100">
+        <svg viewBox="0 0 240 120" class="card-img-top d-block bg-body-tertiary" role="img" aria-label="Medium roast latte with heart foam">
+          <g transform="translate(60 0)">
+            <circle cx="60" cy="60" r="54" fill="#F3EFE8" stroke="rgba(0,0,0,.08)"></circle>
+            <rect x="96" y="52" width="16" height="16" rx="8" fill="#E9E3D8"></rect>
+            <circle cx="60" cy="60" r="42" fill="#FBF8F2" stroke="rgba(0,0,0,.1)"></circle>
+            <circle cx="60" cy="60" r="35" fill="#8A5A30"></circle>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,235,200,.35)" stroke-width="3"></circle>
+            <path d="M60 80C38 64 42 44 54 44 58 44 60 48 60 51 60 48 62 44 66 44 78 44 82 64 60 80Z" fill="#F7EBD9"></path>
+            <path d="M60 52V76" stroke="#8A5A30" stroke-width="2" stroke-linecap="round"></path>
+          </g>
+        </svg>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Medium roast</h4>
+          <p class="card-text">Smooth and round, perfect for lattes.</p>
+          <a href="#" class="btn btn-warning mt-auto">Add to cart</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <section class="card h-100">
+        <svg viewBox="0 0 240 120" class="card-img-top d-block bg-body-tertiary" role="img" aria-label="Medium-dark roast with rosetta foam">
+          <g transform="translate(60 0)">
+            <circle cx="60" cy="60" r="54" fill="#F3EFE8" stroke="rgba(0,0,0,.08)"></circle>
+            <rect x="96" y="52" width="16" height="16" rx="8" fill="#E9E3D8"></rect>
+            <circle cx="60" cy="60" r="42" fill="#FBF8F2" stroke="rgba(0,0,0,.1)"></circle>
+            <circle cx="60" cy="60" r="35" fill="#5A3620"></circle>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,235,200,.35)" stroke-width="3"></circle>
+            <ellipse cx="60" cy="47" rx="15" ry="5" fill="#F7EBD9"></ellipse>
+            <ellipse cx="60" cy="56" rx="13" ry="5" fill="#F7EBD9"></ellipse>
+            <ellipse cx="60" cy="65" rx="10" ry="4.5" fill="#F7EBD9"></ellipse>
+            <ellipse cx="60" cy="73" rx="7" ry="4" fill="#F7EBD9"></ellipse>
+            <path d="M60 44V80" stroke="#5A3620" stroke-width="1.6" stroke-linecap="round"></path>
+          </g>
+        </svg>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Medium-dark roast</h4>
+          <p class="card-text">Rich and chocolatey, with a full body.</p>
+          <a href="#" class="btn btn-warning mt-auto">Add to cart</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col">
+      <section class="card h-100">
+        <svg viewBox="0 0 240 120" class="card-img-top d-block bg-body-tertiary" role="img" aria-label="Dark roast espresso with crema">
+          <g transform="translate(60 0)">
+            <circle cx="60" cy="60" r="54" fill="#F3EFE8" stroke="rgba(0,0,0,.08)"></circle>
+            <rect x="96" y="52" width="16" height="16" rx="8" fill="#E9E3D8"></rect>
+            <circle cx="60" cy="60" r="42" fill="#FBF8F2" stroke="rgba(0,0,0,.1)"></circle>
+            <circle cx="60" cy="60" r="35" fill="#2A1810"></circle>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,235,200,.35)" stroke-width="3"></circle>
+            <circle cx="60" cy="60" r="27" fill="rgba(214,150,80,.4)"></circle>
+            <circle cx="60" cy="60" r="15" fill="rgba(255,220,160,.2)"></circle>
+            <circle cx="50" cy="52" r="2" fill="rgba(255,230,190,.5)"></circle>
+            <circle cx="68" cy="66" r="2.5" fill="rgba(255,230,190,.45)"></circle>
+            <circle cx="58" cy="72" r="1.6" fill="rgba(255,230,190,.5)"></circle>
+          </g>
+        </svg>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Dark roast</h4>
+          <p class="card-text">Bold espresso with a thick golden crema.</p>
+          <a href="#" class="btn btn-warning mt-auto">Add to cart</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Card 6 (new) -->
+    <div class="col">
+      <section class="card h-100">
+        <svg viewBox="0 0 240 120" class="card-img-top d-block bg-body-tertiary" role="img" aria-label="Decaf coffee in a cup">
+          <g transform="translate(60 0)">
+            <circle cx="60" cy="60" r="54" fill="#F3EFE8" stroke="rgba(0,0,0,.08)"></circle>
+            <rect x="96" y="52" width="16" height="16" rx="8" fill="#E9E3D8"></rect>
+            <circle cx="60" cy="60" r="42" fill="#FBF8F2" stroke="rgba(0,0,0,.1)"></circle>
+            <circle cx="60" cy="60" r="35" fill="#7A5230"></circle>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(255,235,200,.35)" stroke-width="3"></circle>
+            <ellipse cx="48" cy="48" rx="11" ry="5" fill="rgba(255,255,255,.22)" transform="rotate(-35 48 48)"></ellipse>
+          </g>
+        </svg>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Decaf</h4>
+          <p class="card-text">All the flavor, without the caffeine.</p>
+          <a href="#" class="btn btn-warning mt-auto">Add to cart</a>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===== OUR STORY ===== -->
+<section class="story py-5" id="story">
+  <div class="container container6">
+    <div class="row row2 align-items-center g-4">
+      <div class="col-md-6 col-md-61">
+        <h2 class="section-title">Why small batch?</h2>
+        <p>Big roasters make tons at a time. We roast only 5 kg at once, so we can watch every batch, adjust the heat and taste before we pack.</p>
+        <p class="mb-0">The result is coffee that is fresher and more flavorful, from a roastery that knows its farmers by name.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="row text-center g-3">
+          <div class="col-4"><div class="display-5" style="color:var(--amber)">5 kg</div><small>per batch</small></div>
+          <div class="col-4"><div class="display-5" style="color:var(--amber)">48 h</div><small>roast to door</small></div>
+          <div class="col-4"><div class="display-5" style="color:var(--amber)">3</div><small>partner farms</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUBSCRIPTION: how it works ===== -->
+<section class="container container2 py-5" id="subscribe">
+  <h2 class="section-title text-center mb-5">How the subscription works</h2>
+  <div class="row text-center g-4">
+    <div class="col-md-4"><div class="step-num mx-auto mb-3">1</div><h4>Choose your roast</h4><p class="text-muted">Pick the coffee you like and how often you want it.</p></div>
+    <div class="col-md-4"><div class="step-num mx-auto mb-3">2</div><h4>We roast it fresh</h4><p class="text-muted">Your beans are roasted the day before they ship.</p></div>
+    <div class="col-md-4"><div class="step-num mx-auto mb-3">3</div><h4>Enjoy and repeat</h4><p class="text-muted">Save 10%, and pause or cancel any time.</p></div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="py-5 bg-white" id="reviews">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">What customers say</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col"><div class="card h-100 p-4"><div class="stars mb-2">★★★★★</div><p>The freshest coffee I have bought in Yerevan. The light roast smells amazing.</p><small class="text-muted mt-auto">Anna, Yerevan</small></div></div>
+      <div class="col"><div class="card h-100 p-4"><div class="stars mb-2">★★★★★</div><p>I subscribed after the first bag. It arrives on time and always tastes great.</p><small class="text-muted mt-auto">Davit, Yerevan</small></div></div>
+      <div class="col"><div class="card h-100 p-4"><div class="stars mb-2">★★★★★</div><p>The dark roast makes a perfect espresso with a thick crema.</p><small class="text-muted mt-auto">Mariam, Gyumri</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="container container3 py-5 text-center" style="max-width: 640px;">
+  <h2 class="section-title">Get 10% off your first order</h2>
+  <p class="text-muted">Join our newsletter for new roasts and brewing tips.</p>
+  <form id="newsletterForm" class="input-group mb-2">
+    <input type="email" class="form-control" placeholder="Your email" aria-label="Email" required>
+    <button class="btn btn-amber" type="submit">Subscribe</button>
+  </form>
+  <div id="newsletterResult"></div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4"><h4 class="text-white">Roastline</h4><p>Small-batch coffee roasted in Yerevan.</p></div>
+      <div class="col-md-4"><h5 class="text-white">Visit</h5><p class="mb-0">Tumanyan St. 1, Yerevan<br>Mon–Sat, 9:00–19:00</p></div>
+      <div class="col-md-4"><h5 class="text-white">Contact</h5><p class="mb-0"><a href="mailto:hello@example.com">hello@example.com</a><br>+374 00 000 000</p></div>
+    </div>
+    <hr class="border-secondary my-4">
+    <small>© 2026 Roastline – a portfolio project</small>
+  </div>
+</footer>
+
+<!-- ===== CART PANEL ===== -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartPanel" aria-labelledby="cartTitle">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartTitle">Your cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="cartItems" class="flex-grow-1"></div>
+    <hr>
+    <div class="d-flex justify-content-between fs-5 fw-semibold mb-3"><span>Total</span><span id="cartTotal">0 ֏</span></div>
+    <button class="btn btn-amber w-100" id="checkoutBtn">Checkout</button>
+  </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

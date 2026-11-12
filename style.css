@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.carousel-item {
+    height: 100vh;   
+}
+
+.carousel-item img {
+  
+     width: 100%;
+    height: 100%; 
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .carousel-item  {
+        width: auto;
+        height: auto;
+    }
+}
+
+.container1 {
+    width: 1000px;
+ 
+    padding: 20px;
+    background-color: #FAF6EFFF;
+    text-align: center;
+}
+
+
+.story  {
+   background-color: #2A1D14FF;
+} 
+
+
+.col-md-6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;   
+    color: #D99A4EFF;
+
+} 
+
+.col-md-6 h2 {
+    font-size: 2.5rem;
+}
+
+.col-md-6  p, small {
+    color: #E8DCC2FF;
+    font-size: 17px;
+}
+
+.col-4 small {
+    font-size: 1.2rem;
+}
+
+
+.container2 {
+    background-color: #F7F3ECFF;
+}
+
+.container2 .step-num {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #D99A4EFF;
+   font-size: 20px;
+   color: #2B1D14FF;
+   border-radius: 50%;
+}
+
+
+.bg-white .col .card{
+    background-color: #FAF6EFFF;
+}
+
+.bg-white .card .stars {
+   color: #C98F48FF;
+}
+
+.container3 {
+    background-color: #F7F3ECFF;
+}
+
+.container3 button {
+    background-color: #D99A4EFF;
+}
+
+
+footer {
+    background-color: #2A1D14FF;
+}
+
+footer p {
+    color: #B9AB98FF;
+}
+
+footer a {
+    color: #D99A4EFF;
+}
+
+nav {
+ position: fixed;
+
+}
+
+
+
+
+.carousel-item img{
+    height: 85vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    position: absolute;
+    margin-bottom: 20px;
+  
+}
+
+/* ամբողջ էջը՝ առանց սպիտակ շերտի */
+
+
+#heroCarousel .carousel-item {
+  height: 85vh;        /* ֆիքսված չափ՝ առանց calc-ի */
+  min-height: 450px;
+}
+
+#heroCarousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;      /* հեռացնում է նկարի տակի փոքր բացը */
+}
+
+/* ավելի ուժեղ մութ շերտ՝ լուսավոր նկարների համար */
+#heroCarousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+              rgba(0,0,0,0.8) 0%,
+              rgba(0,0,0,0.45) 45%,
+              rgba(0,0,0,0.15) 100%);
+  pointer-events: none;
+}
+
+#heroCarousel .carousel-caption {
+  z-index: 2;
+  bottom: 15%;
+}
+
+#heroCarousel .carousel-caption h1,
+#heroCarousel .carousel-caption p {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
